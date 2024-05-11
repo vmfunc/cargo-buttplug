@@ -2,6 +2,7 @@
 name = "cargo-buttplug"
 version = "0.1.0"
 edition = "2021"
+repository = "https://github.com/vmfunc/cargo-buttplug"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
