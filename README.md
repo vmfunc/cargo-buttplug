@@ -4,7 +4,7 @@ ensuring positive reinforcement during long, tiring code sessions~
 
 ## Preview
 
-![POC](https://github.com/vmfunc/cargo-buttplug/raw/main/assets/poc.mp4)
+https://github.com/vmfunc/cargo-buttplug/assets/59031302/78939b9c-ad3c-4226-9ffd-6982c5a19ab8
 
 ## Installation
 
