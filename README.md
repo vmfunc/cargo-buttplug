@@ -25,3 +25,6 @@ Simply add buttplug after each cargo command.
     cargo buttplug build
 ```
 
+## Credits
+
+Written by [vmfunc](https://github.com/vmfunc) and [kenneth](https://github.com/kennethnym) because it was a boring saturday
