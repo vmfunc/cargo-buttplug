@@ -3,6 +3,8 @@ name = "cargo-buttplug"
 version = "0.1.0"
 edition = "2021"
 repository = "https://github.com/vmfunc/cargo-buttplug"
+description = "A cargo subcommand for controlling buttplug devices"
+license = "MIT"
 exclude = [
     "assets/*",
 ]
