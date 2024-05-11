@@ -13,7 +13,7 @@ async fn wait_for_input() {
 
 pub async fn vibrate() -> anyhow::Result<()> {
   let connector = new_json_ws_client_connector("ws://127.0.0.1:12345/buttplug");
-  let client = ButtplugClient::new("Example Client");
+  let client = ButtplugClient::new("cargo-buttplug");
   client.connect(connector).await?;
   let mut events = client.event_stream();
 
@@ -21,20 +21,19 @@ pub async fn vibrate() -> anyhow::Result<()> {
     while let Some(event) = events.next().await {
       match event {
         ButtplugClientEvent::DeviceAdded(device) => {
-          println!("Device {} Connected!", device.name());
+          println!("device {} connected", device.name());
         }
         ButtplugClientEvent::DeviceRemoved(info) => {
-          println!("Device {} Removed!", info.name());
+          println!("device {} removed", info.name());
         }
         ButtplugClientEvent::ScanningFinished => {
-          println!("Device scanning is finished!");
+          println!("device scanning is finished!");
         }
         _ => {}
       }
     }
   });
 
-  println!("Connected!");
   client.start_scanning().await?;
 
 client.stop_scanning().await?;
@@ -47,7 +46,7 @@ if client.devices().is_empty() {
     return Ok(());
 }
 
-println!("Connected devices:");
+println!("Vibrating:");
 for device in client.devices() {
     println!("- {}", device.name());
 }
