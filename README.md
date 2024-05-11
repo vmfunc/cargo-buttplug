@@ -1,4 +1,5 @@
 # cargo-buttplug
+![Crates.io Version](https://img.shields.io/crates/v/cargo-buttplug)
 
 ensuring positive reinforcement during long, tiring code sessions~
 
